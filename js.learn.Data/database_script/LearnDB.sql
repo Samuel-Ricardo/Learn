@@ -1,0 +1,19 @@
+IF NOT EXISTS (SELECT 1 FROM sys.databases WHERE name = 'LearnDB')
+BEGIN
+	CREATE DATABASE LearnDB;
+END
+
+ELSE BEGIN
+	DROP DATABASE LearnDB;
+END
+
+GO
+USE LearnDB
+GO
+
+
+
+
+
+
+
