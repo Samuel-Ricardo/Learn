@@ -228,6 +228,11 @@ VALUES
 
 
 
+INSERT INTO Review (CourseId, UserId, Rating, Comments, ReviewDate)
+VALUES 
+(1, 3, 5, 'Excellent course, highly recommended!', GETDATE()),
+(2, 3, 4, 'Great content, but could use more examples.', GETDATE()),
+(3, 1, 5, 'Loved the hands-on projects and practical examples.', GETDATE());
 
 
 
