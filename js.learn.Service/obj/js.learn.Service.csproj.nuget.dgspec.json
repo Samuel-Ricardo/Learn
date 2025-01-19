@@ -31,7 +31,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj"
+              },
+              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Data\\LSC.OnlineCourse.Data.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Data\\LSC.OnlineCourse.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -48,6 +55,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.22.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
+            },
+            "SendGrid.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
