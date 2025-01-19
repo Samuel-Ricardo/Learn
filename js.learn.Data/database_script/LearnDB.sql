@@ -302,7 +302,11 @@ VALUES
 (3, 179.99, GETDATE(), 'Credit Card', 'Completed');
 
 
-
+INSERT INTO Review (CourseId, UserId, Rating, Comments, ReviewDate)
+VALUES 
+(4, 6, 5, 'Fantastic course with great content!', GETDATE()),
+(5, 6, 4, 'Very informative but could have more hands-on examples.', GETDATE()),
+(6, 4, 5, 'Great for understanding Agile principles.', GETDATE());
 
 
 
