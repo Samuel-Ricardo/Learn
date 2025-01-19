@@ -407,6 +407,59 @@ VALUES
 ((SELECT CourseId FROM Course WHERE Title = 'Advanced Data Science Techniques'), 'AI in Production', 'Deploying AI models in real-world applications.', 'https://example.com/ds-ai-production', 4);
 
 
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('UI/UX Design Fundamentals', 'Learn the essentials of user interface and user experience design.', 179.99, 'Offline', NULL, 30.0, 3, 1, '2024-10-15', '2024-11-15');
+
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+((SELECT CourseId FROM Course WHERE Title = 'UI/UX Design Fundamentals'), 'Introduction to UI/UX', 'Overview of UI/UX design principles and importance.', 'https://example.com/uiux-intro', 1),
+((SELECT CourseId FROM Course WHERE Title = 'UI/UX Design Fundamentals'), 'Wireframing and Prototyping', 'Creating wireframes and prototypes for designs.', 'https://example.com/uiux-wireframing', 2),
+((SELECT CourseId FROM Course WHERE Title = 'UI/UX Design Fundamentals'), 'Design Systems and Style Guides', 'Establishing design systems and style guides for consistency.', 'https://example.com/uiux-designsystems', 3),
+((SELECT CourseId FROM Course WHERE Title = 'UI/UX Design Fundamentals'), 'Usability Testing', 'Methods and tools for usability testing.', 'https://example.com/uiux-usability', 4);
+
+
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('Python for Data Analysis', 'Learn how to use Python for data analysis, visualization, and statistical modeling.', 159.99, 'Online', 60, 35.0, 2, 1, '2024-09-15', '2024-10-15');
+
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+((SELECT CourseId FROM Course WHERE Title = 'Python for Data Analysis'), 'Introduction to Python', 'Getting started with Python programming.', 'https://example.com/python-intro', 1),
+((SELECT CourseId FROM Course WHERE Title = 'Python for Data Analysis'), 'Data Manipulation with Pandas', 'Using Pandas for data manipulation and cleaning.', 'https://example.com/python-pandas', 2),
+((SELECT CourseId FROM Course WHERE Title = 'Python for Data Analysis'), 'Data Visualization with Matplotlib', 'Creating visualizations with Matplotlib and Seaborn.', 'https://example.com/python-visualization', 3),
+((SELECT CourseId FROM Course WHERE Title = 'Python for Data Analysis'), 'Statistical Modeling', 'Applying statistical models using Python.', 'https://example.com/python-statistics', 4);
+
+
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('Digital Marketing Masterclass', 'Comprehensive guide to mastering digital marketing strategies.', 199.99, 'Online', 40, 25.0, 3, 1, '2024-12-01', '2024-12-31');
+
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+((SELECT CourseId FROM Course WHERE Title = 'Digital Marketing Masterclass'), 'Introduction to Digital Marketing', 'Overview of digital marketing and its components.', 'https://example.com/dm-intro', 1),
+((SELECT CourseId FROM Course WHERE Title = 'Digital Marketing Masterclass'), 'SEO Strategies', 'Optimizing content for search engines.', 'https://example.com/dm-seo', 2),
+((SELECT CourseId FROM Course WHERE Title = 'Digital Marketing Masterclass'), 'Social Media Marketing', 'Using social media platforms for marketing.', 'https://example.com/dm-socialmedia', 3),
+((SELECT CourseId FROM Course WHERE Title = 'Digital Marketing Masterclass'), 'Email Marketing Campaigns', 'Designing and executing email marketing campaigns.', 'https://example.com/dm-email', 4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
