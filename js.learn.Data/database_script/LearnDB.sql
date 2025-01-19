@@ -171,3 +171,11 @@ INSERT INTO SmartApp (AppName)
 VALUES 
 ('Online_Course'),
 ('Expense_Tracker');
+
+
+DECLARE @appId int = (select SmartAppId from SmartApp where AppName= 'Online_Course')
+INSERT INTO UserRole (RoleId, UserId, SmartAppId)
+VALUES 
+(1, 1,@appId),  -- John Doe as Admin
+(2, 2,@appId),  -- Jane Smith as Instructor
+(3, 3, @appId); -- Alice Johnson as Student
