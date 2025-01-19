@@ -443,7 +443,26 @@ VALUES
 ((SELECT CourseId FROM Course WHERE Title = 'Digital Marketing Masterclass'), 'Email Marketing Campaigns', 'Designing and executing email marketing campaigns.', 'https://example.com/dm-email', 4);
 
 
+update SessionDetails set VideoUrl = 'https://www.youtube.com/watch?v=70q8PanGbnw'
+where CourseId=1
 
+update SessionDetails set 
+VideoUrl = 'https://www.youtube.com/watch?v=fqI0ToX1nDQ'
+where CourseId<>1
+
+
+CREATE TABLE VideoRequest (
+    VideoRequestId INT IDENTITY(1,1),    
+    UserId INT NOT NULL, 
+	Topic NVARCHAR(50) NOT NULL, 
+	SubTopic NVARCHAR(50) NOT NULL, 
+	ShortTitle NVARCHAR(200) NOT NULL, 
+	RequestDescription NVARCHAR(4000) NOT NULL, 
+	Response NVARCHAR(4000) NULL, 
+	VideoUrls NVARCHAR(2000) NULL, 
+    CONSTRAINT PK_VideoRequest_VideoRequestId PRIMARY KEY (VideoRequestId),
+    CONSTRAINT FK_VideoRequest_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
+);
 
 
 
