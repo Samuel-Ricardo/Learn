@@ -464,7 +464,20 @@ CREATE TABLE VideoRequest (
     CONSTRAINT FK_VideoRequest_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
 );
 
+go
 
+ALTER DATABASE OnlineCourseDB
+SET CHANGE_TRACKING = ON
+(CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON);
+
+ALTER TABLE [dbo].[VideoRequest]
+ENABLE CHANGE_TRACKING;
+
+go
+
+ALTER TABLE dbo.UserProfile ADD ProfilePictureUrl  NVARCHAR(500) NULL
+
+ALTER TABLE dbo.Course ADD Thumbnail  NVARCHAR(500) NULL
 
 
 
