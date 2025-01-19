@@ -263,6 +263,9 @@ VALUES
 ('Project Management', 'Courses on managing projects, teams, and resources effectively.');
 
 
+INSERT INTO Instructor (FirstName, LastName, Email, Bio, UserId)
+VALUES 
+('Laura', 'White', 'laura.white@example.com', 'Certified web developer and instructor with 8 years of experience.', 5);
 
 
 
