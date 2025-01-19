@@ -288,6 +288,12 @@ VALUES
 (6, 'Agile Tools and Techniques', 'Tools and techniques for Agile project management.', 'https://example.com/agile-tools', 3);
 
 
+INSERT INTO Enrollment (CourseId, UserId, EnrollmentDate, PaymentStatus)
+VALUES 
+(4, 6, GETDATE(), 'Completed'),
+(5, 6, GETDATE(), 'Pending'),
+(6, 4, GETDATE(), 'Completed');
+
 
 
 
