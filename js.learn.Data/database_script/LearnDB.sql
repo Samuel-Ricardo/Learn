@@ -342,6 +342,13 @@ VALUES
 ('Chris', 'Taylor', 'chris.taylor@example.com', 'Marketing expert with over 15 years of experience in the industry.', 8);
 
 
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('Digital Marketing Mastery', 'Become an expert in digital marketing with this comprehensive course.', 219.99, 'Online', 30, 35.0, 7, 3, '2024-11-01', '2024-12-01'),
+('Personal Finance Essentials', 'Learn how to manage your finances and make smart investments.', 179.99, 'Offline', NULL, 25.0, 8, 3, NULL, NULL),
+('Yoga for Beginners', 'Start your journey to physical and mental wellness with yoga.', 99.99, 'Online', 20, 15.0, 9, 3, '2024-11-01', '2024-11-15');
+
+
 
 
 
