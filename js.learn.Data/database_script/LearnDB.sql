@@ -330,6 +330,13 @@ VALUES
 (3, 9,@appId); -- Sophia Davis as Student
 
 
+INSERT INTO CourseCategory (CategoryName, Description)
+VALUES 
+('Marketing', 'Courses focused on digital marketing, SEO, and social media marketing.'),
+('Finance', 'Courses covering investment, personal finance, and accounting.'),
+('Health & Fitness', 'Courses on physical fitness, mental well-being, and nutrition.');
+
+
 
 
 
