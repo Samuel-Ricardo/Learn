@@ -235,6 +235,116 @@ VALUES
 (3, 1, 5, 'Loved the hands-on projects and practical examples.', GETDATE());
 
 
+INSERT INTO UserProfile (DisplayName, FirstName, LastName, Email, AdObjId)
+VALUES 
+('Michael Brown', 'Michael', 'Brown', 'michael.brown@example.com', 'ad-obj-id-004'),
+('Laura White', 'Laura', 'White', 'laura.white@example.com', 'ad-obj-id-005'),
+('David Green', 'David', 'Green', 'david.green@example.com', 'ad-obj-id-006');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
