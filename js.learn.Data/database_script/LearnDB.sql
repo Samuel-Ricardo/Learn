@@ -34,7 +34,9 @@ CREATE TABLE UserProfile (
     CONSTRAINT PK_UserProfile_UserId PRIMARY KEY (UserId)
 );
 
-
-
-
+CREATE TABLE Roles (
+	RoleId INT IDENTITY (1,1),
+	RoleName NVARCHAR(50) NOT NULL,
+	CONSTRAINT PK_Roles_RoleId PRIMARY KEY (RoleId)
+)
 
