@@ -309,6 +309,11 @@ VALUES
 (6, 4, 5, 'Great for understanding Agile principles.', GETDATE());
 
 
+INSERT INTO UserProfile (DisplayName, FirstName, LastName, Email, AdObjId)
+VALUES 
+('Emma Wilson', 'Emma', 'Wilson', 'emma.wilson@example.com', 'ad-obj-id-007'),
+('Chris Taylor', 'Chris', 'Taylor', 'chris.taylor@example.com', 'ad-obj-id-008'),
+('Sophia Davis', 'Sophia', 'Davis', 'sophia.davis@example.com', 'ad-obj-id-009');
 
 
 
