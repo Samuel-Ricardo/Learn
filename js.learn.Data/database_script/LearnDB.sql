@@ -213,6 +213,12 @@ VALUES
 (3, 'Advanced Photoshop Techniques', 'Master advanced techniques in Adobe Photoshop.', 'https://example.com/photoshop-techniques', 3);
 
 
+INSERT INTO Enrollment (CourseId, UserId, EnrollmentDate, PaymentStatus)
+VALUES 
+(1, 3, GETDATE(), 'Completed'),
+(2, 3, GETDATE(), 'Pending'),
+(3, 1, GETDATE(), 'Completed');
+
 
 
 
