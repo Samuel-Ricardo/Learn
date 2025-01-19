@@ -179,3 +179,52 @@ VALUES
 (1, 1,@appId),  -- John Doe as Admin
 (2, 2,@appId),  -- Jane Smith as Instructor
 (3, 3, @appId); -- Alice Johnson as Student
+
+
+INSERT INTO CourseCategory (CategoryName, Description)
+VALUES 
+('Programming', 'Courses related to software development and programming languages.'),
+('Data Science', 'Courses covering data analysis, machine learning, and AI.'),
+('Design', 'Courses related to graphic design, UX/UI, and creative fields.');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
