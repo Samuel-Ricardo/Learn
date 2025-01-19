@@ -105,7 +105,16 @@ CREATE TABLE SessionDetails (
     CONSTRAINT FK_SessionDetails_Course FOREIGN KEY (CourseId) REFERENCES Course(CourseId)
 );
 
-
+CREATE TABLE Enrollment (
+    EnrollmentId INT IDENTITY(1,1),
+    CourseId INT NOT NULL,
+    UserId INT NOT NULL,
+    EnrollmentDate DATETIME NOT NULL DEFAULT GETDATE(),
+    PaymentStatus NVARCHAR(20) NOT NULL CHECK (PaymentStatus IN ('Pending', 'Completed', 'Failed')),
+    CONSTRAINT PK_Enrollment_EnrollmentId PRIMARY KEY (EnrollmentId),
+    CONSTRAINT FK_Enrollment_Course FOREIGN KEY (CourseId) REFERENCES Course(CourseId),
+    CONSTRAINT FK_Enrollment_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
+);
 
 
 
