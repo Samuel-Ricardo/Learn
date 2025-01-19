@@ -94,6 +94,16 @@ CREATE TABLE Course (
     CONSTRAINT FK_Course_Instructor FOREIGN KEY (InstructorId) REFERENCES Instructor(InstructorId)
 );
 
+CREATE TABLE SessionDetails (
+    SessionId INT IDENTITY(1,1),
+    CourseId INT NOT NULL,
+    Title NVARCHAR(100) NOT NULL,
+    Description NVARCHAR(MAX),
+    VideoUrl NVARCHAR(500),
+    VideoOrder INT NOT NULL,
+    CONSTRAINT PK_SessionDetails_SessionId PRIMARY KEY (SessionId),
+    CONSTRAINT FK_SessionDetails_Course FOREIGN KEY (CourseId) REFERENCES Course(CourseId)
+);
 
 
 
