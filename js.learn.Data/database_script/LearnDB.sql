@@ -395,7 +395,16 @@ VALUES
 ((SELECT CourseId FROM Course WHERE Title = 'Full Stack Web Development'), 'Deploying Web Applications', 'How to deploy web applications to the cloud.', 'https://example.com/fullstack-deployment', 4);
 
 
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('Advanced Data Science Techniques', 'Dive deep into advanced techniques in data science, including deep learning and AI.', 299.99, 'Online', 50, 45.0, 2, 1, '2024-11-01', '2024-12-31');
 
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+((SELECT CourseId FROM Course WHERE Title = 'Advanced Data Science Techniques'), 'Deep Learning Overview', 'Introduction to deep learning and neural networks.', 'https://example.com/ds-deeplearning', 1),
+((SELECT CourseId FROM Course WHERE Title = 'Advanced Data Science Techniques'), 'Convolutional Neural Networks', 'Understanding CNNs for image processing.', 'https://example.com/ds-cnn', 2),
+((SELECT CourseId FROM Course WHERE Title = 'Advanced Data Science Techniques'), 'Natural Language Processing', 'NLP techniques and applications.', 'https://example.com/ds-nlp', 3),
+((SELECT CourseId FROM Course WHERE Title = 'Advanced Data Science Techniques'), 'AI in Production', 'Deploying AI models in real-world applications.', 'https://example.com/ds-ai-production', 4);
 
 
 
