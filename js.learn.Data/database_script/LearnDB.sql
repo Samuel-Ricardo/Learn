@@ -187,6 +187,9 @@ VALUES
 ('Data Science', 'Courses covering data analysis, machine learning, and AI.'),
 ('Design', 'Courses related to graphic design, UX/UI, and creative fields.');
 
+INSERT INTO Instructor (FirstName, LastName, Email, Bio, UserId)
+VALUES 
+('Jane', 'Smith', 'jane.smith@example.com', 'Experienced software engineer with 10 years in the industry.', 2);
 
 
 
