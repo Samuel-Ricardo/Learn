@@ -268,6 +268,12 @@ VALUES
 ('Laura', 'White', 'laura.white@example.com', 'Certified web developer and instructor with 8 years of experience.', 5);
 
 
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('Full Stack Web Development', 'Learn to build web applications from scratch using modern technologies.', 249.99, 'Online', 40, 50.0, 4, 2, '2024-10-01', '2024-11-30'),
+('Ethical Hacking Basics', 'Introduction to ethical hacking and cybersecurity fundamentals.', 199.99, 'Online', 35, 40.0, 5, 2, '2024-10-01', '2024-11-30'),
+('Agile Project Management', 'Master the principles of Agile and Scrum.', 179.99, 'Offline', NULL, 30.0, 6, 2, NULL, NULL);
+
 
 
 
