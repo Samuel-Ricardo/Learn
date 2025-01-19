@@ -249,6 +249,13 @@ VALUES
 ('Student');
 
 
+INSERT INTO UserRole (RoleId, UserId, SmartAppId)
+VALUES 
+(1, 4,@appId), -- Michael Brown as Admin
+(2, 5,@appId), -- Laura White as Instructor
+(3, 6,@appId); -- David Green as Student
+
+
 
 
 
