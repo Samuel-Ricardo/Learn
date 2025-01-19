@@ -348,8 +348,51 @@ VALUES
 ('Personal Finance Essentials', 'Learn how to manage your finances and make smart investments.', 179.99, 'Offline', NULL, 25.0, 8, 3, NULL, NULL),
 ('Yoga for Beginners', 'Start your journey to physical and mental wellness with yoga.', 99.99, 'Online', 20, 15.0, 9, 3, '2024-11-01', '2024-11-15');
 
+---
+
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+(7, 'Introduction to Digital Marketing', 'Learn the basics of digital marketing.', 'https://example.com/digital-marketing-intro', 1),
+(7, 'SEO Best Practices', 'Optimize your content for search engines.', 'https://example.com/seo-best-practices', 2),
+(7, 'Social Media Marketing', 'Leverage social media for brand growth.', 'https://example.com/social-media-marketing', 3),
+(8, 'Basics of Personal Finance', 'Understanding the fundamentals of personal finance.', 'https://example.com/personal-finance-basics', 1),
+(8, 'Investment Strategies', 'Learn different strategies for smart investing.', 'https://example.com/investment-strategies', 2),
+(8, 'Budgeting and Saving', 'Tips for effective budgeting and saving.', 'https://example.com/budgeting-saving', 3),
+(9, 'Introduction to Yoga', 'Basics of yoga and its benefits.', 'https://example.com/yoga-intro', 1),
+(9, 'Beginner Yoga Poses', 'Learn simple yoga poses for beginners.', 'https://example.com/beginner-yoga-poses', 2),
+(9, 'Meditation and Relaxation', 'Incorporate meditation into your daily routine.', 'https://example.com/meditation-relaxation', 3);
+
+INSERT INTO Enrollment (CourseId, UserId, EnrollmentDate, PaymentStatus)
+VALUES 
+(7, 9, GETDATE(), 'Completed'),
+(8, 9, GETDATE(), 'Pending'),
+(9, 7, GETDATE(), 'Completed');
+
+INSERT INTO Payment (EnrollmentId, Amount, PaymentDate, PaymentMethod, PaymentStatus)
+VALUES 
+(1, 219.99, GETDATE(), 'Credit Card', 'Completed'),
+(2, 179.99, GETDATE(), 'Credit Card', 'Pending'),
+(3, 99.99, GETDATE(), 'Credit Card', 'Completed');
+
+INSERT INTO Review (CourseId, UserId, Rating, Comments, ReviewDate)
+VALUES 
+(7, 9, 5, 'Highly recommend for anyone wanting to learn digital marketing!', GETDATE()),
+(8, 9, 4, 'Very helpful, but could include more advanced topics.', GETDATE()),
+(9, 7, 5, 'Great introduction to yoga, very relaxing.', GETDATE());
+
+---
+
+INSERT INTO Course (Title, Description, Price, CourseType, SeatsAvailable, Duration, CategoryId, InstructorId, StartDate, EndDate)
+VALUES 
+('Full Stack Web Development', 'Learn to build complete web applications using HTML, CSS, JavaScript, and backend technologies.', 249.99, 'Online', 75, 60.0, 1, 1, '2024-10-01', '2024-12-01');
 
 
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+((SELECT CourseId FROM Course WHERE Title = 'Full Stack Web Development'), 'Introduction to Web Development', 'Overview of web development and technologies involved.', 'https://example.com/fullstack-intro', 1),
+((SELECT CourseId FROM Course WHERE Title = 'Full Stack Web Development'), 'Frontend Development Basics', 'Introduction to HTML, CSS, and JavaScript.', 'https://example.com/fullstack-frontend', 2),
+((SELECT CourseId FROM Course WHERE Title = 'Full Stack Web Development'), 'Backend Development Basics', 'Introduction to server-side programming and databases.', 'https://example.com/fullstack-backend', 3),
+((SELECT CourseId FROM Course WHERE Title = 'Full Stack Web Development'), 'Deploying Web Applications', 'How to deploy web applications to the cloud.', 'https://example.com/fullstack-deployment', 4);
 
 
 
