@@ -275,6 +275,17 @@ VALUES
 ('Agile Project Management', 'Master the principles of Agile and Scrum.', 179.99, 'Offline', NULL, 30.0, 6, 2, NULL, NULL);
 
 
+INSERT INTO SessionDetails (CourseId, Title, Description, VideoUrl, VideoOrder)
+VALUES 
+(4, 'Introduction to Web Development', 'Overview of web development and technologies.', 'https://example.com/web-development-intro', 1),
+(4, 'Building APIs with Node.js', 'Learn to create APIs using Node.js.', 'https://example.com/nodejs-apis', 2),
+(4, 'Frontend Development with React', 'Learn React for building user interfaces.', 'https://example.com/react-frontend', 3),
+(5, 'Introduction to Cybersecurity', 'Overview of cybersecurity concepts and practices.', 'https://example.com/cybersecurity-intro', 1),
+(5, 'Network Security Fundamentals', 'Learn about securing network infrastructure.', 'https://example.com/network-security', 2),
+(5, 'Ethical Hacking Techniques', 'Introduction to ethical hacking tools and techniques.', 'https://example.com/ethical-hacking', 3),
+(6, 'Introduction to Agile', 'Overview of Agile project management.', 'https://example.com/agile-intro', 1),
+(6, 'Scrum Framework', 'Learn about the Scrum framework and roles.', 'https://example.com/scrum-framework', 2),
+(6, 'Agile Tools and Techniques', 'Tools and techniques for Agile project management.', 'https://example.com/agile-tools', 3);
 
 
 
