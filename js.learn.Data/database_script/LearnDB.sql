@@ -58,6 +58,13 @@ CREATE TABLE UserRole (
 	CONSTRAINT FK_UserRole_SmartApp FOREIGN KEY (SmartAppId) REFERENCES SmartApp(SmartAppId)
 )
 
+CREATE TABLE CourseCategory (
+	CategoryId INT IDENTITY(1,1),
+	CategoryName NVARCHAR(50) NOT NULL,
+	Description NVARCHAR(250),
+    CONSTRAINT PK_CourseCategory_CategoryId PRIMARY KEY (CategoryId)
+);
+
 
 
 
