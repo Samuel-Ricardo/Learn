@@ -295,6 +295,12 @@ VALUES
 (6, 4, GETDATE(), 'Completed');
 
 
+INSERT INTO Payment (EnrollmentId, Amount, PaymentDate, PaymentMethod, PaymentStatus)
+VALUES 
+(1, 249.99, GETDATE(), 'Credit Card', 'Completed'),
+(2, 199.99, GETDATE(), 'Credit Card', 'Pending'),
+(3, 179.99, GETDATE(), 'Credit Card', 'Completed');
+
 
 
 
