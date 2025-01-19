@@ -40,3 +40,9 @@ CREATE TABLE Roles (
 	CONSTRAINT PK_Roles_RoleId PRIMARY KEY (RoleId)
 )
 
+CREATE TABLE SmartApp (
+	SmartAppId INT IDENTITY(1,1),
+	AppName NVARCHAR(50) NOT NULL,
+	CONSTRAINT PK_SmartApp_SmartAppId PRIMARY KEY (SmartAppId)
+);
+
