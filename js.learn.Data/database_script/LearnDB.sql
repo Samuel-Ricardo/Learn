@@ -1,3 +1,5 @@
+-- DATABASE --
+
 IF NOT EXISTS (SELECT 1 FROM sys.databases WHERE name = 'LearnDB')
 BEGIN
 	CREATE DATABASE LearnDB;
@@ -11,6 +13,8 @@ GO
 USE LearnDB
 GO
 
+-- MIGRATION --
+
 IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
 BEGIN
 	CREATE TABLE [__EFMigrationsHistory] (
@@ -20,6 +24,9 @@ BEGIN
 	);
 END;
 GO
+
+
+-- MODELS --
 
 BEGIN TRANSACTION;
 GO
@@ -142,3 +149,13 @@ CREATE TABLE Review (
 
 COMMIT;
 GO
+
+
+-- POPULATE --
+
+INSERT INTO UserProfile (DisplayName, FirstName, LastName, Email, AdObjId)
+VALUES 
+('John Doe', 'John', 'Doe', 'john.doe@example.com', 'ad-obj-id-001'),
+('Jane Smith', 'Jane', 'Smith', 'jane.smith@example.com', 'ad-obj-id-002'),
+('Alice Johnson', 'Alice', 'Johnson', 'alice.johnson@example.com', 'ad-obj-id-003');
+
