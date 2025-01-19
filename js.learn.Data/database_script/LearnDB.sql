@@ -76,6 +76,23 @@ CREATE TABLE Instructor (
 	CONSTRAINT FK_Instructor_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
 );
 
+CREATE TABLE Course (
+    CourseId INT IDENTITY(1,1),
+    Title NVARCHAR(100) NOT NULL,
+    Description NVARCHAR(MAX) NOT NULL,
+    Price DECIMAL(18, 2) NOT NULL,
+    CourseType NVARCHAR(10) NOT NULL CHECK (CourseType IN ('Online', 'Offline')),
+    SeatsAvailable INT CHECK (SeatsAvailable >= 0),
+    Duration DECIMAL(5, 2) NOT NULL, -- Duration in hours
+    CategoryId INT NOT NULL,
+    InstructorId INT NOT NULL,
+    StartDate DATETIME, -- Applicable for Online courses
+    EndDate DATETIME, -- Applicable for Online courses
+  
+	CONSTRAINT PK_Course_CourseId PRIMARY KEY (CourseId),
+    CONSTRAINT FK_Course_CourseCategory FOREIGN KEY (CategoryId) REFERENCES CourseCategory(CategoryId),
+    CONSTRAINT FK_Course_Instructor FOREIGN KEY (InstructorId) REFERENCES Instructor(InstructorId)
+);
 
 
 
