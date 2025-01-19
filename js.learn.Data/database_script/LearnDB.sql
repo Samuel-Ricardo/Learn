@@ -46,3 +46,22 @@ CREATE TABLE SmartApp (
 	CONSTRAINT PK_SmartApp_SmartAppId PRIMARY KEY (SmartAppId)
 );
 
+CREATE TABLE UserRole (
+	UserRoleId INT IDENTITY(1,1),
+	RoleId INT NOT NULL,
+	UserId INT NOT NULL,
+	SmartAppId INT NOT NULL,
+
+	CONSTRAINT PK_UserRole_UserRoleId PRIMARY KEY (UserRoleId),
+    CONSTRAINT FK_UserRole_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId),
+    CONSTRAINT FK_UserRole_Roles FOREIGN KEY (RoleId) REFERENCES Roles(RoleId),
+	CONSTRAINT FK_UserRole_SmartApp FOREIGN KEY (SmartAppId) REFERENCES SmartApp(SmartAppId)
+)
+
+
+
+
+
+
+
+
