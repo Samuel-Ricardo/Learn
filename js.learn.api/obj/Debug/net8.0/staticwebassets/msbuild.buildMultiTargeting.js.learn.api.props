@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\js.learn.api.props" />
+</Project>
