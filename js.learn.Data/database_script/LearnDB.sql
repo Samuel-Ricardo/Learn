@@ -256,6 +256,12 @@ VALUES
 (3, 6,@appId); -- David Green as Student
 
 
+INSERT INTO CourseCategory (CategoryName, Description)
+VALUES 
+('Web Development', 'Courses focusing on front-end and back-end web development.'),
+('Cybersecurity', 'Courses covering security practices and ethical hacking.'),
+('Project Management', 'Courses on managing projects, teams, and resources effectively.');
+
 
 
 
