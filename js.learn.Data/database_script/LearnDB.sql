@@ -127,4 +127,18 @@ CREATE TABLE Payment (
     CONSTRAINT FK_Payment_Enrollment FOREIGN KEY (EnrollmentId) REFERENCES Enrollment(EnrollmentId)
 );
 
+CREATE TABLE Review (
+    ReviewId INT IDENTITY(1,1),
+    CourseId INT NOT NULL,
+    UserId INT NOT NULL,
+    Rating INT NOT NULL CHECK (Rating BETWEEN 1 AND 5),
+    Comments NVARCHAR(MAX),
+    ReviewDate DATETIME NOT NULL DEFAULT GETDATE(),
+    CONSTRAINT PK_Review_ReviewId PRIMARY KEY (ReviewId),
+    CONSTRAINT FK_Review_Course FOREIGN KEY (CourseId) REFERENCES Course(CourseId),
+    CONSTRAINT FK_Review_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
+);
 
+
+COMMIT;
+GO
