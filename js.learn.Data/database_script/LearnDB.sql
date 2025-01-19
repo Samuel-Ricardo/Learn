@@ -337,6 +337,9 @@ VALUES
 ('Health & Fitness', 'Courses on physical fitness, mental well-being, and nutrition.');
 
 
+INSERT INTO Instructor (FirstName, LastName, Email, Bio, UserId)
+VALUES 
+('Chris', 'Taylor', 'chris.taylor@example.com', 'Marketing expert with over 15 years of experience in the industry.', 8);
 
 
 
