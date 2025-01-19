@@ -159,8 +159,15 @@ VALUES
 ('Jane Smith', 'Jane', 'Smith', 'jane.smith@example.com', 'ad-obj-id-002'),
 ('Alice Johnson', 'Alice', 'Johnson', 'alice.johnson@example.com', 'ad-obj-id-003');
 
+
 INSERT INTO Roles (RoleName)
 VALUES 
 ('Admin'),
 ('Instructor'),
 ('Student');
+
+
+INSERT INTO SmartApp (AppName)
+VALUES 
+('Online_Course'),
+('Expense_Tracker');
