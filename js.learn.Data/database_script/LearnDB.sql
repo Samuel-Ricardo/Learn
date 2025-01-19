@@ -323,6 +323,13 @@ VALUES
 ('Student');
 
 
+INSERT INTO UserRole (RoleId, UserId, SmartAppId)
+VALUES 
+(1, 7,@appId), -- Emma Wilson as Admin
+(2, 8,@appId), -- Chris Taylor as Instructor
+(3, 9,@appId); -- Sophia Davis as Student
+
+
 
 
 
