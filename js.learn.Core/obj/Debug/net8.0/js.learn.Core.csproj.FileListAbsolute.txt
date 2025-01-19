@@ -1,0 +1,15 @@
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\bin\Debug\net8.0\js.learn.Core.deps.json
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\bin\Debug\net8.0\js.learn.Core.runtimeconfig.json
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\bin\Debug\net8.0\js.learn.Core.dll
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\bin\Debug\net8.0\js.learn.Core.pdb
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.csproj.AssemblyReference.cache
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.AssemblyInfoInputs.cache
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.AssemblyInfo.cs
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.csproj.CoreCompileInputs.cache
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.sourcelink.json
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.dll
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\refint\js.learn.Core.dll
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.pdb
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\js.learn.Core.genruntimeconfig.cache
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.Core\obj\Debug\net8.0\ref\js.learn.Core.dll

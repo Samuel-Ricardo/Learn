@@ -15,8 +15,9 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
 		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
 	</ItemGroup>
+
 	<ItemGroup>
-		<ProjectReference Include="..\LSC.OnlineCourse.Core\LSC.OnlineCourse.Core.csproj" />
+	  <ProjectReference Include="..\js.learn.Service\js.learn.Service.csproj" />
 	</ItemGroup>
 	
 </Project>

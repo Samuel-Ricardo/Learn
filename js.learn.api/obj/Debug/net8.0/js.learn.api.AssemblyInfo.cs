@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("js.learn.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+898e58466af5398181bc11eb555fb5635b9837a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bc24ff22aa9dc5c891b9825673512eb15500f88")]
 [assembly: System.Reflection.AssemblyProductAttribute("js.learn.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("js.learn.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

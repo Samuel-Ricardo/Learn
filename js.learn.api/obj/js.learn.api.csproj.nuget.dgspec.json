@@ -221,8 +221,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj": {
-                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj"
+              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Service\\js.learn.Service.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Service\\js.learn.Service.csproj"
               }
             }
           }
@@ -309,11 +309,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj": {
-                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj"
-              },
-              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Data\\LSC.OnlineCourse.Data.csproj": {
-                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Data\\LSC.OnlineCourse.Data.csproj"
+              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Core\\js.learn.Core.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Core\\js.learn.Core.csproj"
               }
             }
           }

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "VWPctasZIlk=",
-  "success": false,
+  "dgSpecHash": "zzj9uAsIolA=",
+  "success": true,
   "projectFilePath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.api\\js.learn.api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Desktop\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
@@ -102,24 +102,5 @@
     "C:\\Users\\Desktop\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Desktop\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Não é possível encontrar o projeto 'C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj'. Verifique se a referência do projeto é válida e se o arquivo de projeto existe.",
-      "libraryId": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Core\\LSC.OnlineCourse.Core.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Não é possível encontrar o projeto 'C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Data\\LSC.OnlineCourse.Data.csproj'. Verifique se a referência do projeto é válida e se o arquivo de projeto existe.",
-      "libraryId": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\LSC.OnlineCourse.Data\\LSC.OnlineCourse.Data.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
