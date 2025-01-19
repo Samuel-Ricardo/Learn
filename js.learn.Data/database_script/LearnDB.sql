@@ -242,7 +242,11 @@ VALUES
 ('David Green', 'David', 'Green', 'david.green@example.com', 'ad-obj-id-006');
 
 
-
+INSERT INTO Roles (RoleName)
+VALUES 
+('Admin'),
+('Instructor'),
+('Student');
 
 
 
