@@ -65,6 +65,17 @@ CREATE TABLE CourseCategory (
     CONSTRAINT PK_CourseCategory_CategoryId PRIMARY KEY (CategoryId)
 );
 
+CREATE TABLE Instructor (
+	InstructorId INT IDENTITY(1,1),
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
+	Email NVARCHAR(100) NOT NULL,
+    Bio NVARCHAR(MAX),
+	UserId INT NOT NULL,  
+    CONSTRAINT PK_Instructor_InstructorId PRIMARY KEY (InstructorId),
+	CONSTRAINT FK_Instructor_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
+);
+
 
 
 
