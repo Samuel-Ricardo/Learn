@@ -116,6 +116,15 @@ CREATE TABLE Enrollment (
     CONSTRAINT FK_Enrollment_UserProfile FOREIGN KEY (UserId) REFERENCES UserProfile(UserId)
 );
 
-
+CREATE TABLE Payment (
+    PaymentId INT IDENTITY(1,1),
+    EnrollmentId INT NOT NULL,
+    Amount DECIMAL(18, 2) NOT NULL,
+    PaymentDate DATETIME NOT NULL DEFAULT GETDATE(),
+    PaymentMethod NVARCHAR(50) NOT NULL,
+    PaymentStatus NVARCHAR(20) NOT NULL CHECK (PaymentStatus IN ('Pending', 'Completed', 'Failed')),
+    CONSTRAINT PK_Payment_PaymentId PRIMARY KEY (PaymentId),
+    CONSTRAINT FK_Payment_Enrollment FOREIGN KEY (EnrollmentId) REFERENCES Enrollment(EnrollmentId)
+);
 
 
