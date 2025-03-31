@@ -1,4 +1,7 @@
 
+using js.learn.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+
 namespace js.learn.api;
 
 public class Program
@@ -6,6 +9,15 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        var configuration = builder.Configuration;
+
+        builder.Services.AddDbContextPool<LearnDbContext>(options =>
+        {
+            options.UseSqlServer(
+                configuration.GetConnectionString("DbContext"), 
+                providerOptions => providerOptions.EnableRetryOnFailure()
+             );
+        });
 
         // Add services to the container.
 
