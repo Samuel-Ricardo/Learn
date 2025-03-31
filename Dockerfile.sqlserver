@@ -1,0 +1,24 @@
+FROM mcr.microsoft.com/mssql/server:2022-latest
+
+USER root
+
+# Atualiza pacotes e instala dependências necessárias
+RUN apt-get update && apt-get install -y curl apt-transport-https gnupg2
+
+# Adiciona chave e repositório da Microsoft para SQL Server
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && \
+  curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
+
+# Atualiza novamente e instala os pacotes necessários
+RUN apt-get update && ACCEPT_EULA=Y apt-get install -y \
+  unixodbc unixodbc-dev \
+  libodbc1 odbcinst1debian2 odbcinst \
+  msodbcsql18 mssql-tools
+
+# Adiciona o caminho do mssql-tools ao PATH
+RUN echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc && \
+  echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> /etc/profile
+
+# Define o usuário padrão como "mssql"
+USER mssql
+
