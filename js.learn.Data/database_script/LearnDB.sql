@@ -1,3 +1,5 @@
+ -- dotnet ef dbcontext scaffold "Server=localhost,1433;Initial Catalog=LearnDB;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Entities -d --
+
 -- DATABASE --
 
 IF NOT EXISTS (SELECT 1 FROM sys.databases WHERE name = 'LearnDB')
@@ -7,6 +9,7 @@ END
 
 ELSE BEGIN
 	DROP DATABASE LearnDB;
+    CREATE DATABASE LearnDB;
 END
 
 GO
@@ -478,123 +481,3 @@ go
 ALTER TABLE dbo.UserProfile ADD ProfilePictureUrl  NVARCHAR(500) NULL
 
 ALTER TABLE dbo.Course ADD Thumbnail  NVARCHAR(500) NULL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
