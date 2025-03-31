@@ -1,0 +1,26 @@
+services:
+  sqlserver:
+    #    image: mcr.microsoft.com/mssql/server
+    build:
+      context: .
+      dockerfile: Dockerfile.sqlserver
+    container_name: sqlserver
+    #    restart: always
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./js.learn.Data/database_script/LearnDB.sql:/scripts/init.sql
+    entrypoint: >
+      /bin/bash -c "
+      /opt/mssql/bin/sqlservr & 
+      sleep 30s && 
+      /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'YourStrong!Passw0rd' -d master -i /scripts/init.sql &&
+      tail -f /dev/null
+      "
+
+volumes:
+  sqlserver_data:
