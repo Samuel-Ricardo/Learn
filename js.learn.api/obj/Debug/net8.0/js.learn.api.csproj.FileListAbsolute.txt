@@ -181,3 +181,6 @@ C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\bin\Debug\net8.0\js.lear
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\bin\Debug\net8.0\js.learn.Data.pdb
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\bin\Debug\net8.0\js.learn.Service.pdb
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\obj\Debug\net8.0\js.learn.api.sourcelink.json
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\bin\Debug\net8.0\js.learn.api.staticwebassets.endpoints.json
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Desktop\source\repos\js.learn.api\js.learn.api\obj\Debug\net8.0\staticwebassets\msbuild.js.learn.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

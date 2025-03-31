@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "Jc+aE6gE4HlcmYVILXIVf354lFp1pKu3//qhUTrwYG8=",
+  "Hash": "oX3W7WDgUWUdj3rX9S7aZe37F5mV8amt0sedsTEVUGY=",
   "Source": "js.learn.api",
   "BasePath": "_content/js.learn.api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
