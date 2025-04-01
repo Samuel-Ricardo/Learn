@@ -9,14 +9,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace js.learn.Data
 {
-    internal class AsyncCourseCategoryRepository(LearnDbContext dbContext) : IAsyncCourseCategoryRepository
+    public class AsyncCourseCategoryRepository(LearnDbContext dbContext) : IAsyncCourseCategoryRepository
     {
 
-        private readonly ICourseCategoryRepository _courseCategoryRepository;
+        private readonly LearnDbContext _dbContext = dbContext;
 
-        public Task<CourseCategory?> GetByIdAsync(int id) => dbContext.CourseCategories.FindAsync(id).AsTask();
+        public Task<CourseCategory?> GetByIdAsync(int id) => _dbContext.CourseCategories.FindAsync(id).AsTask();
         
 
-        public Task<List<CourseCategory>> GetCourseCategoriesAsync() => dbContext.CourseCategories.ToListAsync();
+        public Task<List<CourseCategory>> GetCourseCategoriesAsync() => _dbContext.CourseCategories.ToListAsync();
     }
 }

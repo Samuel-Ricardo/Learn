@@ -7,7 +7,7 @@ using js.learn.Core.Entities;
 
 namespace js.learn.Data
 {
-    internal interface IAsyncCourseCategoryRepository
+    public interface IAsyncCourseCategoryRepository
     {
         Task<CourseCategory?> GetByIdAsync(int   id);
         Task<List<CourseCategory>> GetCourseCategoriesAsync();
