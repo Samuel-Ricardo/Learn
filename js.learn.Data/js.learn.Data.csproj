@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\js.learn.Service\js.learn.Service.csproj" />
+	  <ProjectReference Include="..\js.learn.Core\js.learn.Core.csproj" />
 	</ItemGroup>
 	
 </Project>

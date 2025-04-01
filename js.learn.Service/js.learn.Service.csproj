@@ -16,6 +16,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\js.learn.Core\js.learn.Core.csproj" />
+	  <ProjectReference Include="..\js.learn.Data\js.learn.Data.csproj" />
 	</ItemGroup>
 		
 </Project>
