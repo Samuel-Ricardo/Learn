@@ -5,12 +5,34 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/api/CourseCategory/{id}": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "CourseCategory"
         ],
-        "operationId": "GetWeatherForecast",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CourseCategory": {
+      "get": {
+        "tags": [
+          "CourseCategory"
+        ],
         "responses": {
           "200": {
             "description": "OK"

@@ -223,8 +223,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Service\\js.learn.Service.csproj": {
-                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Service\\js.learn.Service.csproj"
+              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Core\\js.learn.Core.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Core\\js.learn.Core.csproj"
               }
             }
           }
@@ -314,6 +314,9 @@
             "projectReferences": {
               "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Core\\js.learn.Core.csproj": {
                 "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Core\\js.learn.Core.csproj"
+              },
+              "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Data\\js.learn.Data.csproj": {
+                "projectPath": "C:\\Users\\Desktop\\source\\repos\\js.learn.api\\js.learn.Data\\js.learn.Data.csproj"
               }
             }
           }

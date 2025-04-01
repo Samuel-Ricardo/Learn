@@ -1,13 +1,28 @@
 [
   {
-    "ContainingType": "js.learn.api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "js.learn.api.Controllers.CourseCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/CourseCategory",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "js.learn.api.Controllers.CourseCategoryController",
+    "Method": "Get",
+    "RelativePath": "api/CourseCategory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

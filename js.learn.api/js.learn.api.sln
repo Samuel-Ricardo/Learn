@@ -6,10 +6,16 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "js.learn.api", "js.learn.api.csproj", "{ED1569F0-2E45-4479-AA27-4C79D26CCDD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "js.learn.Data", "..\js.learn.Data\js.learn.Data.csproj", "{B2CFC08E-EC2E-4501-B025-48D9EA0B44D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63B5B5BE-A387-41BF-B977-B4B646209AF0} = {63B5B5BE-A387-41BF-B977-B4B646209AF0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "js.learn.Core", "..\js.learn.Core\js.learn.Core.csproj", "{63B5B5BE-A387-41BF-B977-B4B646209AF0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "js.learn.Service", "..\js.learn.Service\js.learn.Service.csproj", "{21BE96E9-7F28-41A5-B534-9AD85765AADD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2CFC08E-EC2E-4501-B025-48D9EA0B44D9} = {B2CFC08E-EC2E-4501-B025-48D9EA0B44D9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

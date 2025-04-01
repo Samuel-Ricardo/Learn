@@ -12,7 +12,8 @@
           "Azure.Storage.Blobs": "12.22.0",
           "SendGrid": "9.28.1",
           "SendGrid.Extensions.DependencyInjection": "1.0.1",
-          "js.learn.Core": "1.0.0"
+          "js.learn.Core": "1.0.0",
+          "js.learn.Data": "1.0.0"
         },
         "runtime": {
           "js.learn.Service.dll": {}
@@ -719,6 +720,20 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "js.learn.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
+          "js.learn.Core": "1.0.0"
+        },
+        "runtime": {
+          "js.learn.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1198,6 +1213,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "js.learn.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "js.learn.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3,8 +3,6 @@ C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.lea
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.learn.Data.dll
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.learn.Data.pdb
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.learn.Core.dll
-C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.learn.Service.dll
-C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.learn.Service.pdb
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\bin\Debug\net8.0\js.learn.Core.pdb
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\obj\Debug\net8.0\js.learn.Data.csproj.AssemblyReference.cache
 C:\Users\Desktop\source\repos\js.learn.api\js.learn.Data\obj\Debug\net8.0\js.learn.Data.GeneratedMSBuildEditorConfig.editorconfig

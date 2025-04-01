@@ -1216,7 +1216,7 @@
           "Microsoft.EntityFrameworkCore": "9.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.1",
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
-          "js.learn.Service": "1.0.0"
+          "js.learn.Core": "1.0.0"
         },
         "runtime": {
           "js.learn.Data.dll": {
@@ -1231,7 +1231,8 @@
           "Azure.Storage.Blobs": "12.22.0",
           "SendGrid": "9.28.1",
           "SendGrid.Extensions.DependencyInjection": "1.0.1",
-          "js.learn.Core": "1.0.0"
+          "js.learn.Core": "1.0.0",
+          "js.learn.Data": "1.0.0"
         },
         "runtime": {
           "js.learn.Service.dll": {
