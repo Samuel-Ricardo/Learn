@@ -31,8 +31,10 @@ public class Program
 
         builder.Services.AddScoped<ICourseCategoryRepository, CourseCategoryRepository>();
         builder.Services.AddScoped<IAsyncCourseCategoryRepository, AsyncCourseCategoryRepository>();
+        builder.Services.AddScoped<ICourseRepository, CourseReposity>();
 
         builder.Services.AddScoped<ICourseCategoryService, CourseCategoryService>();
+        builder.Services.AddScoped<ICourseService, CourseService>();
 
 
 
