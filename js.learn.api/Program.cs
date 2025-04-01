@@ -1,5 +1,7 @@
 
+using js.learn.Data;
 using js.learn.Data.Entities;
+using js.learn.Service;
 using Microsoft.EntityFrameworkCore;
 
 namespace js.learn.api;
@@ -25,6 +27,14 @@ public class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+
+        builder.Services.AddScoped<ICourseCategoryRepository, CourseCategoryRepository>();
+        builder.Services.AddScoped<IAsyncCourseCategoryRepository, AsyncCourseCategoryRepository>();
+
+        builder.Services.AddScoped<ICourseCategoryService, CourseCategoryService>();
+
+
 
         var app = builder.Build();
 
