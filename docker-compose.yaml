@@ -1,11 +1,9 @@
 services:
   sqlserver:
-    #    image: mcr.microsoft.com/mssql/server
     build:
       context: .
       dockerfile: Dockerfile.sqlserver
     container_name: sqlserver
-    #    restart: always
     environment:
       SA_PASSWORD: "YourStrong!Passw0rd"
       ACCEPT_EULA: "Y"
@@ -21,6 +19,19 @@ services:
       /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'YourStrong!Passw0rd' -d master -i /scripts/init.sql &&
       tail -f /dev/null
       "
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: js.learn.api
+    ports:
+      - "8080:80"
+    depends_on:
+      - sqlserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Server=sqlserver;Database=LearnDB;User=sa;Password=YourStrong!Passw0rd;
 
 volumes:
   sqlserver_data:
